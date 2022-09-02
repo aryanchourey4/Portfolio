@@ -4,6 +4,17 @@
     align-items: center;
 }
 
+.hobbies-head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies-head #lottie{
+    min-width: 200px;
+}
+
 .hobbies-container h1{
     color: rgb(78, 16, 16);
     font-size: 3.5rem;

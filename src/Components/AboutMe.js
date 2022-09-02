@@ -18,7 +18,7 @@ export default function AboutMe() {
             autoplay={true}
             loop={true}
             controls={false}
-            src="/lotties/skills.json"
+            src="/lotties/7vzAhE6SPn.json"
             style={{ height: 'auto', width: '30vw' }}
           ></Player>
         </div>

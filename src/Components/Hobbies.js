@@ -1,15 +1,27 @@
 import React from 'react'
 import '../styles/Hobbies.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Player } from '@lottiefiles/react-lottie-player';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import { useSelector } from 'react-redux'
 
 
 export default function Hobbies() {
-  const darkState = useSelector(state=>state.darkmode.value);
+  const darkState = useSelector(state => state.darkmode.value);
   return (
-    <div id='hobbies-container' className={`hobbies-container ${darkState?"dark":""}`}>
-      <h1>Hobbies</h1>
+    <div id='hobbies-container' className={`hobbies-container ${darkState ? "dark" : ""}`}>
+      <div className="hobbies-head">
+        <h1>Hobbies</h1>
+        <div id='hobbies-anim'>
+          <Player
+            autoplay={true}
+            loop={true}
+            controls={false}
+            src="/lotties/KRlMkQlJWU.json"
+            style={{ height: 'auto', width: '15vw' }}
+          ></Player>
+        </div>
+      </div>
       <div className='hobbies-icons'>
         <div className='hover-icon'>
           <FontAwesomeIcon className='icons' icon={solid('code')} />
