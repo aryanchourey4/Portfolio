@@ -1,0 +1,77 @@
+footer{
+    /* height: 2.5rem; */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(255, 224, 187);
+    transition: all 0.3s ease;
+    /* align-self: flex-end; */
+}
+
+.footGrow{
+    display: flex;
+    flex: 1;
+    transition: background-color 0.3s ease;
+}
+
+.footer-container{
+    position: realtive;
+    align-self: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 224, 187); */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* padding: 10px;
+    z-index: -1; */
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons .icons{
+    color: rgb(102, 21, 21);
+    margin: 5px 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-text{
+    margin: 5px 3px;
+    margin-top: 0px;
+    font-weight: 600;
+    color: rgb(102, 21, 21);
+    transition: all 0.3s ease;
+}
+
+
+/* Dark Mode */
+
+
+.footer.dark{
+    background-color: rgb(102, 21, 21);
+}
+
+.footer.dark .footer-icons .icons{
+    color: rgb(255, 224, 187);
+    margin: 5px 5px;
+    margin-top: 10px;
+}
+
+.footer.dark .footer-text{
+    margin: 5px 3px;
+    margin-top: 0px;
+    font-weight: 600;
+    color: rgb(255, 224, 187);
+}
+
+.footGrow.dark{
+    background-color: rgb(46, 10, 10);
+}

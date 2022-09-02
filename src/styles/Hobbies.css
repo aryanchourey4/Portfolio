@@ -1,0 +1,153 @@
+.hobbies-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies-container h1{
+    color: rgb(78, 16, 16);
+    font-size: 3.5rem;
+    margin: 20px 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.hobbies-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hobbies-icons .icons{
+    color: rgb(102, 21, 21);
+    width: 150px;
+    height: 150px;
+    margin: 40px calc(60px + 5vw);
+    margin-top: 0px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.141);
+    padding: 15px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    transition: all 0.3s ease;
+}
+
+.hover-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.hover-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    width: 300px;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    margin: 250px 2px 2px 2px;
+
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: all 0.5s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.hover-text::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+    transition: all 0.3s ease;
+  }
+
+.hover-icon:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease;
+  } 
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 360px){
+    .hover-icon .icons{
+        margin: 40px 5px;
+        margin-top: 0px;
+    }
+
+    .hover-text{
+        width: 250px;
+    }
+}
+
+/* Mobiles */
+@media only screen and (min-width: 319px) and (max-width: 426px){
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 426px) and (max-width: 769px){
+    
+}
+
+/* Laptop */
+@media only screen and (min-width: 769px) and (max-width: 1025px){
+    
+}
+
+/* Laptop L */
+@media only screen and (min-width: 1025px) and (max-width: 1441px){
+        
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1921px){
+        
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 2561px){
+      
+}
+
+@media only screen and (min-width: 2561px){
+    
+}
+
+
+
+/* Dark Mode */
+
+
+
+.hobbies-container.dark h1{
+    color: rgb(214, 191, 161);
+}
+
+.hobbies-container.dark .hobbies-icons .icons{
+    color: blanchedalmond;
+    box-shadow: 0 1px 15px white;
+    background-color: rgb(102, 21, 21);
+}
+
+.hobbies-container.dark .hover-text{
+    background-color: white;
+    color: black;
+}
+
+.hobbies-container.dark .hover-text::after {
+    border-color: transparent transparent white transparent;
+  }

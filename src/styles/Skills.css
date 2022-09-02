@@ -1,0 +1,85 @@
+.skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#skills-container{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    justify-content: center;
+}
+
+#skills-container h1{
+    color: rgb(78, 16, 16);
+    font-size: 3.5rem;
+    margin: 20px 50px;
+    transition: all 0.3s ease;
+}
+
+.skills .progress-name{
+    color: brown;
+    transition: all 0.3s ease;
+}
+
+.progressWrap{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 40px;
+    margin-bottom: 60px;
+    padding: 2px calc(8px + 1.5625vw) ;
+    gap: 30px;
+}
+
+.progress{
+    background-color:blanchedalmond !important;
+    transition: all 0.3s ease;
+}
+
+.progress .progress-bar{
+    background-color:rgb(67, 12, 12) !important;
+    transition: all 0.3s ease;
+}
+
+
+@media only screen and (max-width: 769px){
+    .skills{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #skills-container h1{
+        margin: 20px 5px;
+    }
+
+    .skills .playerLottie{
+        margin: 50px;
+    }
+
+    .progressWrap{
+        margin: 10px 5%;
+        margin: 5px 10px;    }
+}
+
+
+/* Dark Mode */
+
+
+.skills.dark #skills-container h1{
+    color: blanchedalmond;
+
+}
+
+.skills.dark .progress-name{
+    color: blanchedalmond;
+}
+
+.skills.dark .progress{
+    background-color:rgb(67, 12, 12) !important;
+}
+
+.skills.dark .progress .progress-bar{
+    background-color:blanchedalmond !important;
+}

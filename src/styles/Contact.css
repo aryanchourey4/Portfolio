@@ -1,0 +1,167 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-container h1{
+    color: rgb(78, 16, 16);
+    font-size: 3.5rem;
+    margin: 20px 30px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+#mail-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-boxes{
+    display: flex;
+    flex-direction: column;
+    margin: 45px calc(10px + 50vh);
+    padding: 2px calc(8px + 1.5625vh);
+}
+
+.form-labels{
+    color: brown;
+    font-size: 1rem;
+    margin: 3px 10px;
+    transition: all 0.3s ease;
+}
+
+.text-box{
+    background-color: rgb(255, 244, 231);
+    border-radius: 5px;
+    margin: 3px 10px;
+    margin-bottom: 10px;
+    padding: 4px;
+    border: 1.6px solid grey;
+    color: rgb(102, 21, 21);
+    transition: all 0.3s ease;
+}
+
+.submitButton{
+    border: 1.6px grey solid;
+    width: fit-content;
+    padding: 5px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 224, 187);
+    margin: 10px 10px;
+    font-weight: 500;
+    color: rgb(102, 21, 21);
+    
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 319px){  
+    .form-boxes{
+        margin: 45px 1px;
+        padding: 2px calc(8px + 1.5625vw);
+    }
+    #mail-box{
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobiles */
+@media only screen and (min-width: 319px) and (max-width: 426px){
+
+}
+
+
+@media only screen and (min-width: 319px) and (max-width: 426px){   
+    .form-boxes{
+        margin: 45px 1px;
+        padding: 2px calc(8px + 1.5625vw);
+    }
+    #mail-box{
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 426px) and (max-width: 769px){    
+    .form-boxes{
+        margin: 45px calc(10px + 5vw);
+        padding: 2px calc(8px + 1.5625vw);
+    }
+    #mail-box{
+        flex-wrap: wrap;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 769px) and (max-width: 1025px){  
+    .form-boxes{
+        margin: 45px calc(15px + 7vw);
+        padding: 2px calc(8px + 1.5625vw);
+    }
+}
+
+/* Laptop L */
+@media only screen and (min-width: 1025px) and (max-width: 1441px){    
+    .form-boxes{
+        margin: 45px calc(15px + 10vw);
+        padding: 2px calc(8px + 1.5625vw);
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1921px){    
+    .form-boxes{
+        display: flex;
+        flex-direction: column;
+        margin: 45px calc(15px + 15vw);
+        padding: 2px calc(8px + 1.5625vw);
+    }
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 2561px){    
+    .form-boxes{
+        display: flex;
+        flex-direction: column;
+        margin: 45px calc(15px + 17vw);
+        padding: 2px calc(8px + 1.5625vw);
+    }
+}
+
+@media only screen and (min-width: 2561px){    
+    .form-boxes{
+        display: flex;
+        flex-direction: column;
+        margin: 45px calc(15px + 20vw);
+        padding: 2px calc(8px + 1.5625vw);
+    }
+}
+
+
+/* Dark Mode */
+
+
+.contact-container.dark h1{
+    color: rgb(255, 224, 187);
+}
+
+.contact-container.dark .form-labels{
+    color: rgb(255, 224, 187);
+}
+
+.contact-container.dark .text-box{
+    background-color: rgb(102, 21, 21);
+    border-color: whitesmoke;
+    color: rgb(255, 244, 231);
+}
+
+.contact-container.dark .submitButton{
+    border-color: whitesmoke;
+    background-color: rgb(102, 21, 21);
+    color: rgb(255, 224, 187);
+    
+}

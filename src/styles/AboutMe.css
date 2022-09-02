@@ -1,0 +1,27 @@
+.aboutMe{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#aboutMe-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutMe-container h1{
+    color: rgb(78, 16, 16);
+    font-size: 3.5rem;
+    margin: 20px 50px;
+    transition: all 0.3s ease;
+}
+
+#aboutMe-container p{
+    margin: 30px 100px;
+    color: brown;
+    transition: all 0.3s ease;
+}
+
+#aboutMe-lottie{
+    margin: 30px 40px;
+}
