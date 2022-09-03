@@ -8,23 +8,10 @@ html{
     vertical-align: baseline;
 }
 
-/* body{
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 240, 222)!important;
-    transition: all 3s ease;
-} */
-
 #root{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-body .dark{
-    background-color: rgb(41, 4, 4);
-    transition: all 0.3s ease;
 }
 
 /* Media Queries */

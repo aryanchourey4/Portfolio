@@ -9,6 +9,11 @@ export const darkModeSlice = createSlice({
   reducers: {
     toggle: state => {
       state.value = !state.value
+      if (state.value) {
+        document.body.style.backgroundColor = 'rgb(23, 2, 2)';
+        } else {
+        document.body.style.backgroundColor = 'rgb(255, 246, 236)';
+        }
     }
   }
 })
