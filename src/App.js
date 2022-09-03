@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import MenuWrap from './Components/MenuWrap';
 import Navbar from './Components/Navbar';
@@ -6,18 +5,15 @@ import React from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
 import {Routes} from "react-router-dom";
 import {Route} from "react-router-dom";
-// import {Link} from "react-router-dom";
 import Hobbies from './Components/Hobbies';
 import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import Home from './Components/Home';
 import AboutMe from './Components/AboutMe';
 import Footer from './Components/Footer';
-// import { useSelector } from 'react-redux'
 
 
 function App() {
-  // const darkState = useSelector(state=>state.darkmode.value);
   return (
     <>
     <Router>

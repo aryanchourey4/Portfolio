@@ -26,6 +26,10 @@
     margin: 30px 40px;
 }
 
+#aboutMe-lottie #lottie{
+    min-width: 300px;
+}
+
 
 
 /* Media Queries */
