@@ -8,12 +8,13 @@ html{
     vertical-align: baseline;
 }
 
-body{
+/* body{
     vertical-align: baseline;
     margin: 0;
     padding: 0;
-    /* transition: all 8s ease; */
-}
+    background-color: rgb(255, 240, 222)!important;
+    transition: all 3s ease;
+} */
 
 #root{
     display: flex;
@@ -21,13 +22,9 @@ body{
     min-height: 100vh;
 }
 
-.body{
-    background-color: rgb(252, 220, 180);
-    transition: all 3s ease;
-}
-
-.body.dark{
-    background-color: rgb(48, 7, 7);
+body .dark{
+    background-color: rgb(41, 4, 4);
+    transition: all 0.3s ease;
 }
 
 /* Media Queries */
