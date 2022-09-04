@@ -5,7 +5,7 @@
 }
 
 .contact-container h1{
-    color: rgb(78, 16, 16);
+    color: rgb(95, 23, 23);
     font-size: 3.5rem;
     margin: 20px 30px;
     transition: all 0.3s ease;
@@ -31,10 +31,11 @@
     font-size: 1rem;
     margin: 3px 10px;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .text-box{
-    background-color: rgb(255, 244, 231);
+    background-color: rgb(255, 232, 204);
     border-radius: 5px;
     margin: 3px 10px;
     margin-bottom: 10px;
@@ -146,21 +147,24 @@
 
 
 .contact-container.dark h1{
-    color: rgb(255, 224, 187);
+    color: burlywood;
 }
 
 .contact-container.dark .form-labels{
-    color: rgb(255, 224, 187);
+    color: blanchedalmond;
 }
 
 .contact-container.dark .text-box{
     background-color: rgb(102, 21, 21);
-    border-color: whitesmoke;
+    border-color: wheat;
     color: rgb(255, 244, 231);
+}
+.contact-container.dark .text-box::placeholder{
+    color: wheat;
 }
 
 .contact-container.dark .submitButton{
-    border-color: whitesmoke;
+    border-color: wheat;
     background-color: rgb(102, 21, 21);
     color: rgb(255, 224, 187);
     

@@ -36,7 +36,7 @@ footer{
 }
 
 .footer-icons .icons{
-    color: rgb(59, 19, 19);
+    color: rgb(41, 13, 13);
     margin: 5px 5px;
     margin-top: 10px;
     transition: all 0.3s ease;
@@ -46,7 +46,7 @@ footer{
     margin: 5px 3px;
     margin-top: 0px;
     font-weight: 600;
-    color: rgb(59, 19, 19);
+    color: rgb(41, 13, 13);
     transition: all 0.3s ease;
 }
 
@@ -55,7 +55,7 @@ footer{
 
 
 .footer.dark{
-    background-color: rgb(59, 19, 19);
+    background-color: rgb(41, 13, 13);
 }
 
 .footer.dark .footer-icons .icons{

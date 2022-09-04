@@ -16,7 +16,7 @@
 }
 
 .hobbies-container h1{
-    color: rgb(78, 16, 16);
+    color: rgb(95, 23, 23);
     font-size: 3.5rem;
     margin: 20px 20px;
     transition: all 0.3s ease;
@@ -30,7 +30,7 @@
 }
 
 .hobbies-icons .icons{
-    color: rgb(102, 21, 21);
+    color: rgb(111, 35, 35);
     width: 150px;
     height: 150px;
     margin: 40px calc(60px + 5vw);
@@ -38,7 +38,7 @@
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.141);
     padding: 15px;
     border-radius: 20px;
-    background-color: blanchedalmond;
+    background-color: rgb(254, 227, 186);
     transition: all 0.3s ease;
 }
 
@@ -145,13 +145,13 @@
 
 
 .hobbies-container.dark h1{
-    color: rgb(214, 191, 161);
+    color: burlywood;
 }
 
 .hobbies-container.dark .hobbies-icons .icons{
-    color: blanchedalmond;
-    box-shadow: 0 1px 15px white;
-    background-color: rgb(102, 21, 21);
+    color: beige;
+    box-shadow: 0 1px 15px wheat;
+    background-color: rgb(111, 35, 35);
 }
 
 .hobbies-container.dark .hover-text{

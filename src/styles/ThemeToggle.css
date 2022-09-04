@@ -2,7 +2,7 @@
     height: 27px;
     width: 50px;
     border-radius: 20px;
-    background-color: rgb(59, 19, 19);
+    background-color: rgb(41, 13, 13);
     display: flex;
     align-items: center;
     margin: 0px 5px;
@@ -27,7 +27,7 @@
 }
 
 .toggleSwitch #sun{
-    color: rgb(59, 19, 19);
+    color: rgb(41, 13, 13);
     transition: all 0.3s ease;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .toggleSwitch.dark{
-    background-color: rgb(59, 19, 19);
+    background-color: rgb(41, 13, 13);
     transform: translateX(125%);
     /* transition: all 0.3s ease; */
 }

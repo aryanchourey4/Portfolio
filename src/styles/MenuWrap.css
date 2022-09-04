@@ -3,7 +3,7 @@
     bottom: 87px;
     left: 30px;
     background-color: rgb(255, 224, 187);
-    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.241);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -87,7 +87,7 @@
 .menuWrap .listWrap li{
     white-space: nowrap;
     background-color: rgb(255, 224, 187);
-    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.141);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
     text-align: left;
     width: fit-content;
     padding: 8px 15px;
@@ -107,6 +107,8 @@
 
 .menuWrap.dark{
     background-color: rgb(102, 21, 21);
+    box-shadow: 0 1px 15px rgba(245, 222, 179, 0.5);
+
 }
 
 .menuWrap.dark .line{
@@ -115,6 +117,7 @@
 
 .menuWrap.dark .listWrap li{
     background-color: rgb(102, 21, 21);
+    box-shadow: 0 1px 15px rgba(245, 222, 179, 0.5);
 }
 
 .menuWrap.dark .listWrap li a {
