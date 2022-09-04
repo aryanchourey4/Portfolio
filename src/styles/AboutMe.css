@@ -13,12 +13,15 @@
     color: rgb(95, 23, 23);
     font-size: 3.5rem;
     margin: 20px 100px;
+    font-family: 'Bree Serif', serif;
     transition: all 0.3s ease;
 }
 
 #aboutMe-container p{
     margin: 20px 100px;
     color: brown;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 

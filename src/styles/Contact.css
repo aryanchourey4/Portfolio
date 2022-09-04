@@ -8,6 +8,7 @@
     color: rgb(95, 23, 23);
     font-size: 3.5rem;
     margin: 20px 30px;
+    font-family: 'Bree Serif', serif;
     transition: all 0.3s ease;
     text-align: center;
 }
@@ -29,9 +30,10 @@
 .form-labels{
     color: brown;
     font-size: 1rem;
+    font-family: 'Baloo 2', cursive;
     margin: 3px 10px;
     transition: all 0.3s ease;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .text-box{
@@ -39,6 +41,7 @@
     border-radius: 5px;
     margin: 3px 10px;
     margin-bottom: 10px;
+    font-family: 'Baloo 2', cursive;
     padding: 4px;
     border: 1.6px solid grey;
     color: rgb(102, 21, 21);
@@ -53,7 +56,8 @@
     cursor: pointer;
     background-color: rgb(255, 224, 187);
     margin: 10px 10px;
-    font-weight: 500;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600;
     color: rgb(102, 21, 21);
     
 }
@@ -159,6 +163,7 @@
     border-color: wheat;
     color: rgb(255, 244, 231);
 }
+
 .contact-container.dark .text-box::placeholder{
     color: wheat;
 }

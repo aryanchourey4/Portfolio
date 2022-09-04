@@ -1,6 +1,6 @@
 .menuWrap{
     position: fixed;
-    bottom: 87px;
+    bottom: 50px;
     left: 30px;
     background-color: rgb(255, 224, 187);
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
@@ -55,7 +55,7 @@
     transform: translate(-50%,-50%) rotate(0deg);
 }
 
-.menuIcon  .line{
+.menuIcon .line{
     width: 20px;
     height: 2.3px;
     border-radius: 20px;
@@ -97,6 +97,8 @@
 
 .menuWrap .listWrap li a {
     color: rgb(102, 21, 21);
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
 }
