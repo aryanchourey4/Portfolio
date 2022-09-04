@@ -28,7 +28,6 @@ export default function Hobbies() {
           <div className='hover-text'><h4>Coding</h4><p>I got in interesterd in coding recently and have been trying to get better. I want to explore various fields starting with web development.</p></div>
         </div>
         <div className='hover-icon'>
-
           <FontAwesomeIcon className='icons' icon={solid('person-running')} />
           <div className='hover-text'><h4>Playing Sports</h4><p>I enjoy playing different sports, especially badminton. It helps me stay fit and fresh.</p></div>
         </div>

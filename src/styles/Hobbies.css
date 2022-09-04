@@ -11,10 +11,6 @@
     align-items: center;
 }
 
-.hobbies-head #lottie{
-    min-width: 200px;
-}
-
 .hobbies-container h1{
     color: rgb(95, 23, 23);
     font-size: 3.5rem;
@@ -24,10 +20,24 @@
     text-align: center;
 }
 
+.hobbies-head #lottie{
+    min-width: 200px;
+}
+
+
 .hobbies-icons{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.hover-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 50px;
 }
 
 .hobbies-icons .icons{
@@ -41,15 +51,6 @@
     border-radius: 20px;
     background-color: rgb(254, 227, 186);
     transition: all 0.3s ease;
-}
-
-.hover-icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 80px;
-    margin-top: 50px;
 }
 
 .hover-text{
@@ -67,9 +68,6 @@
     position: absolute;
     z-index: 1;
     margin: 250px 2px 2px 2px;
-
-    
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
     opacity: 0;
     transition: all 0.5s ease, background-color 0.3s ease, color 0.3s ease;
 }
@@ -92,18 +90,43 @@
     border-style: solid;
     border-color: transparent transparent black transparent;
     transition: all 0.3s ease;
-  }
+}
 
+/* Visible on hover */
 .hover-icon:hover .hover-text {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s ease;
-  } 
+} 
+
+
+
+/* Dark Mode */
+
+.hobbies-container.dark h1{
+    color: burlywood;
+}
+
+.hobbies-container.dark .hobbies-icons .icons{
+    color: beige;
+    box-shadow: 0 1px 15px wheat;
+    background-color: rgb(111, 35, 35);
+}
+
+.hobbies-container.dark .hover-text{
+    background-color: white;
+    color: black;
+}
+
+.hobbies-container.dark .hover-text::after {
+    border-color: transparent transparent white transparent;
+}
 
 
 
 /* Media Queries */
 
+/* Mobiles */
 @media only screen and (max-width: 360px){
     .hover-icon .icons{
         margin: 40px 5px;
@@ -115,7 +138,6 @@
     }
 }
 
-/* Mobiles */
 @media only screen and (min-width: 319px) and (max-width: 426px){
     
 }
@@ -147,27 +169,3 @@
     
 }
 
-
-
-/* Dark Mode */
-
-
-
-.hobbies-container.dark h1{
-    color: burlywood;
-}
-
-.hobbies-container.dark .hobbies-icons .icons{
-    color: beige;
-    box-shadow: 0 1px 15px wheat;
-    background-color: rgb(111, 35, 35);
-}
-
-.hobbies-container.dark .hover-text{
-    background-color: white;
-    color: black;
-}
-
-.hobbies-container.dark .hover-text::after {
-    border-color: transparent transparent white transparent;
-  }

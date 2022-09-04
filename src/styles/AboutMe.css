@@ -35,8 +35,21 @@
 
 
 
+/* Dark Mode */
+
+.aboutMe.dark #aboutMe-container h1{
+    color: burlywood;
+}
+
+.aboutMe.dark #aboutMe-container p{
+    color: blanchedalmond;
+}
+
+
+
 /* Media Queries */
 
+/* Mobiles and Tablets */
 @media only screen and (max-width: 426px){
     .aboutMe{
         flex-wrap: wrap;
@@ -72,18 +85,3 @@
         margin-top: 15px;
     }
 }
-
-
-
-/* Dark Mode */
-
-.aboutMe.dark #aboutMe-container h1{
-    color: burlywood;
-}
-
-.aboutMe.dark #aboutMe-container p{
-    color: blanchedalmond;
-}
-
-
-

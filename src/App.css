@@ -14,13 +14,14 @@ html{
     min-height: 100vh;
 }
 
-/* Media Queries */
+/* Media Queries Template*/
 
+
+/* Mobiles */
 @media only screen and (max-width: 319px){
     
 }
 
-/* Mobiles */
 @media only screen and (min-width: 319px) and (max-width: 426px){
     
 }

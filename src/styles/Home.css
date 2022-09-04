@@ -19,8 +19,12 @@
     justify-content: center;
 }
 
-#box1{
-    padding: 2px 100px;
+.hi-anim{
+    display: block;
+    position: relative;
+    transform: rotate(-20deg);
+    bottom: 15px;
+    z-index: 1;
 }
 
 #HomeHeading{
@@ -28,6 +32,11 @@
     transition: all 0.3s ease;
     font-family: 'Bree Serif', serif;
     text-align: center;
+}
+
+#HomeHeading .highlight{
+    color: rgb(148, 37, 37);
+    transition: all 0.3s ease;
 }
 
 .home-in-container hr{
@@ -38,6 +47,10 @@
     margin: 0;
 }
 
+#box1{
+    padding: 2px 100px;
+}
+
 .box p{
     margin: 30px 100px;
     text-align: center;
@@ -45,14 +58,6 @@
     font-family: 'Baloo 2', cursive;
     font-weight: 500;
     transition: all 0.3s ease;
-}
-
-.hi-anim{
-    display: block;
-    position: relative;
-    transform: rotate(-20deg);
-    bottom: 15px;
-    z-index: 1;
 }
 
 .home-out-container img{
@@ -71,29 +76,40 @@
     color: burlywood;
 }
 
+.home-out-container.dark #HomeHeading .highlight{
+    color: rgb(206, 149, 75);
+}
+
 .home-out-container.dark .box p{
     color: blanchedalmond;
 }
 
 
+
 /* Media Queries */
 
+
+/* Mobiles */
 @media only screen and (max-width: 319px){
     .home-out-container{
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
     .home-out-container img{
         width: calc(200px + 1.5625vw);
         margin: 30px calc(8px + 1.5625vw);
     }
+
     #box1{
 
         padding: 2px 5px;
     }
+
     .box p{
         margin: 30px 15px;
     }
+
     #hi-box{
         margin: 0px 5px;
         margin-top: 20px;
@@ -101,23 +117,26 @@
     }
 }
 
-/* Mobiles */
 @media only screen and (min-width: 319px) and (max-width: 376px){
     .home-out-container{
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
     .home-out-container img{
         width: calc(250px + 1.5625vw);
         margin: 30px calc(8px + 1.5625vw);
     }
+
     #box1{
 
         padding: 2px 5px;
     }
+
     .box p{
         margin: 30px 15px;
     }
+
     #hi-box{
         margin: 0px 5px;
         margin-top: 20px;
@@ -130,17 +149,20 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
     .home-out-container img{
         width: calc(250px + 1.5625vw);
         margin: 30px calc(8px + 1.5625vw);
     }
-    #box1{
 
+    #box1{
         padding: 2px 5px;
     }
+
     .box p{
         margin: 30px 15px;
     }
+
     #hi-box{
         margin: 0px 5px;
         margin-top: 20px;
@@ -154,12 +176,15 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
     .home-out-container img{
         margin: 30px calc(8px + 1.5625vw);
     }
+
     #box1{
         padding: 2px 5px;
     }
+
     #hi-box{
         margin: 0px 5px;
         margin-top: 20px;
@@ -171,9 +196,11 @@
     .home-out-container img{
         margin: 60px calc(8px + 1.5625vw);
     }
+
     #box1{
         padding: 2px 5px;
     }
+    
     #hi-box{
         margin: 0px 5px;
         margin-top: 20px;

@@ -1,17 +1,15 @@
+.footGrow{
+    display: flex;
+    flex: 1;
+}
+
 footer{
-    /* height: 2.5rem; */
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 5px;
     background-color: rgb(255, 224, 187);
     transition: all 0.3s ease;
-    /* align-self: flex-end; */
-}
-
-.footGrow{
-    display: flex;
-    flex: 1;
 }
 
 .footer-container{
@@ -21,12 +19,9 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(255, 224, 187); */
     bottom: 0;
     left: 0;
     right: 0;
-    /* padding: 10px;
-    z-index: -1; */
 }
 
 .footer-icons{
@@ -61,13 +56,8 @@ footer{
 
 .footer.dark .footer-icons .icons{
     color: rgb(255, 224, 187);
-    margin: 5px 5px;
-    margin-top: 10px;
 }
 
 .footer.dark .footer-text{
-    margin: 5px 3px;
-    margin-top: 0px;
-    font-weight: 600;
     color: rgb(255, 224, 187);
 }

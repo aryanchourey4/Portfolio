@@ -37,27 +37,23 @@
 }
 
 
+
 /* Dark Mode */
 
 .toggleBase.dark{
     background-color: rgb(255, 224, 187);
-    /* flex-direction: row-reverse; */
-    /* transition: all 0.3s ease; */
 }
 
 .toggleSwitch.dark{
     background-color: rgb(49, 13, 13);
     transform: translateX(125%);
-    /* transition: all 0.3s ease; */
 }
 
 .toggleSwitch.dark #sun{
     display: none;
-    /* transition: all 0.3s ease; */
 }
 
 .toggleSwitch.dark #moon{
     display: initial;
     color: rgb(255, 224, 187);
-    /* transition: all 0.3s ease; */
 }

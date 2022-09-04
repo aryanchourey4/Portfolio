@@ -4,7 +4,6 @@
     align-items: center;
 }
 
-
 #skills-container{
     display: flex;
     flex-direction: column;
@@ -20,13 +19,6 @@
     transition: all 0.3s ease;
 }
 
-.skills .progress-name{
-    color: brown;
-    font-family: 'Baloo 2', cursive;
-    transition: all 0.3s ease;
-    font-weight: 600;
-}
-
 .progressWrap{
     display: flex;
     flex-direction: column;
@@ -34,6 +26,13 @@
     margin-bottom: 60px;
     padding: 2px calc(8px + 1.5625vw) ;
     gap: 30px;
+}
+
+.skills .progress-name{
+    color: brown;
+    font-family: 'Baloo 2', cursive;
+    transition: all 0.3s ease;
+    font-weight: 600;
 }
 
 .progress{
@@ -51,28 +50,8 @@
 }
 
 
-@media only screen and (max-width: 769px){
-    .skills{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #skills-container h1{
-        margin: 20px 5px;
-    }
-
-    .skills .playerLottie{
-        margin: 50px;
-    }
-
-    .progressWrap{
-        margin: 10px 5%;
-        margin: 5px 10px;    }
-}
-
 
 /* Dark Mode */
-
 
 .skills.dark #skills-container h1{
     color: burlywood;
@@ -89,4 +68,29 @@
 
 .skills.dark .progress .progress-bar{
     background-color:beige !important;
+}
+
+
+/* Media Queries */
+
+
+/* Mobiles and Tablets */
+@media only screen and (max-width: 769px){
+    .skills{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #skills-container h1{
+        margin: 20px 5px;
+    }
+
+    .skills .playerLottie{
+        margin: 50px;
+    }
+
+    .progressWrap{
+        margin: 10px 5%;
+        margin: 5px 10px;
+    }
 }
