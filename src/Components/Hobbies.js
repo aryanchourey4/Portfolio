@@ -25,23 +25,24 @@ export default function Hobbies() {
       <div className='hobbies-icons'>
         <div className='hover-icon'>
           <FontAwesomeIcon className='icons' icon={solid('code')} />
-          <div className='hover-text'><h3>Coding</h3><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt voluptatibus nesciunt laboriosam eaque illum minus.</p></div>
+          <div className='hover-text'><h4>Coding</h4><p>I got in interesterd in coding recently and have been trying to get better. I want to explore various fields starting with web development.</p></div>
         </div>
         <div className='hover-icon'>
+
           <FontAwesomeIcon className='icons' icon={solid('person-running')} />
-          <div className='hover-text'><h3>Playing Sports</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, fuga vitae? Iste distinctio facere vero?</p></div>
+          <div className='hover-text'><h4>Playing Sports</h4><p>I enjoy playing different sports, especially badminton. It helps me stay fit and fresh.</p></div>
         </div>
         <div className='hover-icon'>
           <FontAwesomeIcon className='icons' icon={solid('person-biking')} />
-          <div className='hover-text'><h3>Cycling</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel libero blanditiis quod, quis sunt ab.</p></div>
+          <div className='hover-text'><h4>Cycling</h4><p>Cycling is not only good for physical but also our mental health. I am also able to explore new things in my locality while cycling.</p></div>
         </div>
         <div className='hover-icon'>
           <FontAwesomeIcon className='icons' icon={solid('tv')} />
-          <div className='hover-text'><h3>Watching Movies</h3><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure dicta veniam blanditiis debitis, totam hic.</p></div>
+          <div className='hover-text'><h4>Watching Movies and Shows</h4><p>Everybody loves watching movies and shows. They are a great source of entertainment.</p></div>
         </div>
         <div className='hover-icon'>
           <FontAwesomeIcon className='icons' icon={solid('music')} />
-          <div className='hover-text'><h3>Listening to Music</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet iusto nulla vero quam dolores esse.</p></div>
+          <div className='hover-text'><h4>Listening to Music</h4><p>Listening to music helps me clear and soothen my mind.</p></div>
         </div>
       </div>
     </div>
