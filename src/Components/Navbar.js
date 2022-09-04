@@ -6,12 +6,12 @@ import ThemeToggle from './ThemeToggle';
 import { useSelector } from 'react-redux'
 
 export default function Navbar() {
-  const darkState = useSelector(state=>state.darkmode.value);
+  const darkState = useSelector(state => state.darkmode.value);
   return (
-    <nav id='navbar' className={darkState?"dark":""}>
+    <nav id='navbar' className={darkState ? "dark" : ""}>
       <div className='logo'>
         <Link className='' to="/"><img src={NavLogo} alt="Navbar Logo" /></Link>
-        
+
       </div>
       <ul>
         <li className={"item"}><Link className='' to="/">Aryan Chourey</Link></li>

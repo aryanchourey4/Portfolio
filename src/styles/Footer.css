@@ -1,9 +1,9 @@
-.footGrow{
+.footGrow {
     display: flex;
     flex: 1;
 }
 
-footer{
+footer {
     position: relative;
     bottom: 0;
     width: 100%;
@@ -12,7 +12,7 @@ footer{
     transition: all 0.3s ease;
 }
 
-.footer-container{
+.footer-container {
     position: realtive;
     align-self: baseline;
     display: flex;
@@ -24,20 +24,20 @@ footer{
     right: 0;
 }
 
-.footer-icons{
+.footer-icons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-icons .icons{
+.footer-icons .icons {
     color: rgb(49, 13, 13);
     margin: 5px 5px;
     margin-top: 10px;
     transition: all 0.3s ease;
 }
 
-.footer-text{
+.footer-text {
     margin: 5px 3px;
     margin-top: 0px;
     font-family: 'Bree Serif', serif;
@@ -50,14 +50,14 @@ footer{
 /* Dark Mode */
 
 
-.footer.dark{
+.footer.dark {
     background-color: rgb(49, 13, 13);
 }
 
-.footer.dark .footer-icons .icons{
+.footer.dark .footer-icons .icons {
     color: rgb(255, 224, 187);
 }
 
-.footer.dark .footer-text{
+.footer.dark .footer-text {
     color: rgb(255, 224, 187);
 }

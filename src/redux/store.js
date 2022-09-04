@@ -11,9 +11,9 @@ export const darkModeSlice = createSlice({
       state.value = !state.value
       if (state.value) {
         document.body.style.backgroundColor = 'rgb(23, 2, 2)';
-        } else {
+      } else {
         document.body.style.backgroundColor = 'rgb(255, 246, 236)';
-        }
+      }
     }
   }
 })

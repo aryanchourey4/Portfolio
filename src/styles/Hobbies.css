@@ -1,17 +1,17 @@
-.hobbies-container{
+.hobbies-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hobbies-head{
+.hobbies-head {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.hobbies-container h1{
+.hobbies-container h1 {
     color: rgb(95, 23, 23);
     font-size: 3.5rem;
     margin: 20px 20px;
@@ -20,18 +20,18 @@
     text-align: center;
 }
 
-.hobbies-head #lottie{
+.hobbies-head #lottie {
     min-width: 200px;
 }
 
 
-.hobbies-icons{
+.hobbies-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.hover-icon{
+.hover-icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,7 @@
     margin-top: 50px;
 }
 
-.hobbies-icons .icons{
+.hobbies-icons .icons {
     color: rgb(111, 35, 35);
     width: 150px;
     height: 150px;
@@ -53,7 +53,7 @@
     transition: all 0.3s ease;
 }
 
-.hover-text{
+.hover-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,18 +72,18 @@
     transition: all 0.5s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.hover-text h4{
+.hover-text h4 {
     font-family: 'Bree Serif', serif;
 }
 
-.hover-text p{
+.hover-text p {
     font-family: 'Baloo 2', cursive;
 }
 
 .hover-text::after {
     content: " ";
     position: absolute;
-    bottom: 100%;  /* At the top of the tooltip */
+    bottom: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
@@ -97,23 +97,23 @@
     visibility: visible;
     opacity: 1;
     transition: all 0.5s ease;
-} 
+}
 
 
 
 /* Dark Mode */
 
-.hobbies-container.dark h1{
+.hobbies-container.dark h1 {
     color: burlywood;
 }
 
-.hobbies-container.dark .hobbies-icons .icons{
+.hobbies-container.dark .hobbies-icons .icons {
     color: beige;
     box-shadow: 0 1px 15px wheat;
     background-color: rgb(111, 35, 35);
 }
 
-.hobbies-container.dark .hover-text{
+.hobbies-container.dark .hover-text {
     background-color: white;
     color: black;
 }
@@ -127,45 +127,30 @@
 /* Media Queries */
 
 /* Mobiles */
-@media only screen and (max-width: 360px){
-    .hover-icon .icons{
+@media only screen and (max-width: 360px) {
+    .hover-icon .icons {
         margin: 40px 5px;
         margin-top: 0px;
     }
 
-    .hover-text{
+    .hover-text {
         width: 250px;
     }
 }
 
-@media only screen and (min-width: 319px) and (max-width: 426px){
-    
-}
+@media only screen and (min-width: 319px) and (max-width: 426px) {}
 
 /* Tablet */
-@media only screen and (min-width: 426px) and (max-width: 769px){
-    
-}
+@media only screen and (min-width: 426px) and (max-width: 769px) {}
 
 /* Laptop */
-@media only screen and (min-width: 769px) and (max-width: 1025px){
-    
-}
+@media only screen and (min-width: 769px) and (max-width: 1025px) {}
 
 /* Laptop L */
-@media only screen and (min-width: 1025px) and (max-width: 1441px){
-        
-}
+@media only screen and (min-width: 1025px) and (max-width: 1441px) {}
 
-@media only screen and (min-width: 1441px) and (max-width: 1921px){
-        
-}
+@media only screen and (min-width: 1441px) and (max-width: 1921px) {}
 
-@media only screen and (min-width: 1921px) and (max-width: 2561px){
-      
-}
+@media only screen and (min-width: 1921px) and (max-width: 2561px) {}
 
-@media only screen and (min-width: 2561px){
-    
-}
-
+@media only screen and (min-width: 2561px) {}

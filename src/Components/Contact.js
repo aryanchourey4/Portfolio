@@ -51,9 +51,9 @@ export default function Contact() {
           message: ""
         })
       }
-    }).catch((error)=>{
+    }).catch((error) => {
       notyf.error("Failed");
-        });
+    });
   }
 
   const darkState = useSelector(state => state.darkmode.value);
@@ -79,7 +79,7 @@ export default function Contact() {
           <label className='form-labels' htmlFor="email">E-mail: </label>
           <input className='text-box' type={"email"} placeholder={"Enter your E-mail ID"} value={formData.email} onChange={(e) => { setFormData({ ...formData, email: e.target.value }) }} required />
           <label className='form-labels' htmlFor="message">Message: </label>
-          <textarea className='text-box' name="message" rows={7} placeholder={"Enter your message here"} value={formData.message} onChange={(e) => { setFormData({ ...formData, message: e.target.value }) }} required/>
+          <textarea className='text-box' name="message" rows={7} placeholder={"Enter your message here"} value={formData.message} onChange={(e) => { setFormData({ ...formData, message: e.target.value }) }} required />
           <button className='submitButton' onClick={submitQuery} type={"submit"}>
             Submit
           </button>

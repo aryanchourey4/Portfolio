@@ -1,17 +1,17 @@
-.skills{
+.skills {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#skills-container{
+#skills-container {
     display: flex;
     flex-direction: column;
     width: 60vw;
     justify-content: center;
 }
 
-#skills-container h1{
+#skills-container h1 {
     color: rgb(95, 23, 23);
     font-size: 3.5rem;
     margin: 20px 50px;
@@ -19,33 +19,33 @@
     transition: all 0.3s ease;
 }
 
-.progressWrap{
+.progressWrap {
     display: flex;
     flex-direction: column;
     margin: 10px 40px;
     margin-bottom: 60px;
-    padding: 2px calc(8px + 1.5625vw) ;
+    padding: 2px calc(8px + 1.5625vw);
     gap: 30px;
 }
 
-.skills .progress-name{
+.skills .progress-name {
     color: brown;
     font-family: 'Baloo 2', cursive;
     transition: all 0.3s ease;
     font-weight: 600;
 }
 
-.progress{
-    background-color:rgb(254, 227, 186) !important;
+.progress {
+    background-color: rgb(254, 227, 186) !important;
     transition: all 0.3s ease;
 }
 
-.progress .progress-bar{
-    background-color:rgb(111, 35, 35) !important;
+.progress .progress-bar {
+    background-color: rgb(111, 35, 35) !important;
     transition: all 0.3s ease;
 }
 
-.playerLottie #lottie{
+.playerLottie #lottie {
     min-width: 200px;
 }
 
@@ -53,21 +53,21 @@
 
 /* Dark Mode */
 
-.skills.dark #skills-container h1{
+.skills.dark #skills-container h1 {
     color: burlywood;
 
 }
 
-.skills.dark .progress-name{
+.skills.dark .progress-name {
     color: blanchedalmond;
 }
 
-.skills.dark .progress{
-    background-color:rgb(111, 35, 35) !important;
+.skills.dark .progress {
+    background-color: rgb(111, 35, 35) !important;
 }
 
-.skills.dark .progress .progress-bar{
-    background-color:beige !important;
+.skills.dark .progress .progress-bar {
+    background-color: beige !important;
 }
 
 
@@ -75,21 +75,21 @@
 
 
 /* Mobiles and Tablets */
-@media only screen and (max-width: 769px){
-    .skills{
+@media only screen and (max-width: 769px) {
+    .skills {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #skills-container h1{
+    #skills-container h1 {
         margin: 20px 5px;
     }
 
-    .skills .playerLottie{
+    .skills .playerLottie {
         margin: 50px;
     }
 
-    .progressWrap{
+    .progressWrap {
         margin: 10px 5%;
         margin: 5px 10px;
     }

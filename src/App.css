@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     vertical-align: baseline;
 }
 
-#root{
+#root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -18,37 +18,21 @@ html{
 
 
 /* Mobiles */
-@media only screen and (max-width: 319px){
-    
-}
+@media only screen and (max-width: 319px) {}
 
-@media only screen and (min-width: 319px) and (max-width: 426px){
-    
-}
+@media only screen and (min-width: 319px) and (max-width: 426px) {}
 
 /* Tablet */
-@media only screen and (min-width: 426px) and (max-width: 769px){
-    
-}
+@media only screen and (min-width: 426px) and (max-width: 769px) {}
 
 /* Laptop */
-@media only screen and (min-width: 769px) and (max-width: 1025px){
-    
-}
+@media only screen and (min-width: 769px) and (max-width: 1025px) {}
 
 /* Laptop L */
-@media only screen and (min-width: 1025px) and (max-width: 1441px){
-        
-}
+@media only screen and (min-width: 1025px) and (max-width: 1441px) {}
 
-@media only screen and (min-width: 1441px) and (max-width: 1921px){
-        
-}
+@media only screen and (min-width: 1441px) and (max-width: 1921px) {}
 
-@media only screen and (min-width: 1921px) and (max-width: 2561px){
-      
-}
+@media only screen and (min-width: 1921px) and (max-width: 2561px) {}
 
-@media only screen and (min-width: 2561px){
-    
-}
+@media only screen and (min-width: 2561px) {}

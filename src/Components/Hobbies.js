@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/Hobbies.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Player } from '@lottiefiles/react-lottie-player';
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { useSelector } from 'react-redux'
 
 

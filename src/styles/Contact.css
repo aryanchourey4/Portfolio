@@ -1,16 +1,16 @@
-.contact-container{
+.contact-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#mail-box{
+#mail-box {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact-container h1{
+.contact-container h1 {
     color: rgb(95, 23, 23);
     font-size: 3.5rem;
     margin: 20px 30px;
@@ -19,14 +19,14 @@
     text-align: center;
 }
 
-.form-boxes{
+.form-boxes {
     display: flex;
     flex-direction: column;
     margin: 45px calc(10px + 50vh);
     padding: 2px calc(8px + 1.5625vh);
 }
 
-.form-labels{
+.form-labels {
     color: brown;
     font-size: 1rem;
     font-family: 'Baloo 2', cursive;
@@ -35,7 +35,7 @@
     font-weight: 600;
 }
 
-.text-box{
+.text-box {
     background-color: rgb(255, 232, 204);
     border-radius: 5px;
     margin: 3px 10px;
@@ -47,7 +47,7 @@
     transition: all 0.3s ease;
 }
 
-.submitButton{
+.submitButton {
     border: 1.6px grey solid;
     width: fit-content;
     padding: 5px 14px;
@@ -64,25 +64,25 @@
 
 /* Dark Mode */
 
-.contact-container.dark h1{
+.contact-container.dark h1 {
     color: burlywood;
 }
 
-.contact-container.dark .form-labels{
+.contact-container.dark .form-labels {
     color: blanchedalmond;
 }
 
-.contact-container.dark .text-box{
+.contact-container.dark .text-box {
     background-color: rgb(102, 21, 21);
     border-color: wheat;
     color: rgb(255, 244, 231);
 }
 
-.contact-container.dark .text-box::placeholder{
+.contact-container.dark .text-box::placeholder {
     color: wheat;
 }
 
-.contact-container.dark .submitButton{
+.contact-container.dark .submitButton {
     border-color: wheat;
     background-color: rgb(102, 21, 21);
     color: rgb(255, 224, 187);
@@ -93,61 +93,59 @@
 /* Media Queries */
 
 /* Mobiles */
-@media only screen and (max-width: 319px){  
-    .form-boxes{
+@media only screen and (max-width: 319px) {
+    .form-boxes {
         margin: 45px 1px;
         padding: 2px calc(8px + 1.5625vw);
     }
-    #mail-box{
+
+    #mail-box {
         flex-wrap: wrap;
     }
 }
 
-@media only screen and (min-width: 319px) and (max-width: 426px){
-
-}
-
-
-@media only screen and (min-width: 319px) and (max-width: 426px){   
-    .form-boxes{
+@media only screen and (min-width: 319px) and (max-width: 426px) {
+    .form-boxes {
         margin: 45px 1px;
         padding: 2px calc(8px + 1.5625vw);
     }
-    #mail-box{
+
+    #mail-box {
         flex-wrap: wrap;
     }
-    
+
 }
 
 /* Tablet */
-@media only screen and (min-width: 426px) and (max-width: 769px){    
-    .form-boxes{
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+    .form-boxes {
         margin: 45px calc(10px + 5vw);
         padding: 2px calc(8px + 1.5625vw);
     }
-    #mail-box{
+
+    #mail-box {
         flex-wrap: wrap;
     }
 }
 
 /* Laptop */
-@media only screen and (min-width: 769px) and (max-width: 1025px){  
-    .form-boxes{
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+    .form-boxes {
         margin: 45px calc(15px + 7vw);
         padding: 2px calc(8px + 1.5625vw);
     }
 }
 
 /* Laptop L */
-@media only screen and (min-width: 1025px) and (max-width: 1441px){    
-    .form-boxes{
+@media only screen and (min-width: 1025px) and (max-width: 1441px) {
+    .form-boxes {
         margin: 45px calc(15px + 10vw);
         padding: 2px calc(8px + 1.5625vw);
     }
 }
 
-@media only screen and (min-width: 1441px) and (max-width: 1921px){    
-    .form-boxes{
+@media only screen and (min-width: 1441px) and (max-width: 1921px) {
+    .form-boxes {
         display: flex;
         flex-direction: column;
         margin: 45px calc(15px + 15vw);
@@ -155,8 +153,8 @@
     }
 }
 
-@media only screen and (min-width: 1921px) and (max-width: 2561px){    
-    .form-boxes{
+@media only screen and (min-width: 1921px) and (max-width: 2561px) {
+    .form-boxes {
         display: flex;
         flex-direction: column;
         margin: 45px calc(15px + 17vw);
@@ -164,8 +162,8 @@
     }
 }
 
-@media only screen and (min-width: 2561px){    
-    .form-boxes{
+@media only screen and (min-width: 2561px) {
+    .form-boxes {
         display: flex;
         flex-direction: column;
         margin: 45px calc(15px + 20vw);

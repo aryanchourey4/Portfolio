@@ -5,10 +5,10 @@ import { useSelector } from 'react-redux'
 
 
 export default function Skills() {
-  const darkState = useSelector(state=>state.darkmode.value);
+  const darkState = useSelector(state => state.darkmode.value);
   return (
     <>
-      <div className={`skills ${darkState?"dark":""}`}>
+      <div className={`skills ${darkState ? "dark" : ""}`}>
         <div id="skills-container">
           <h1>Skills</h1>
           <div className="progressWrap">

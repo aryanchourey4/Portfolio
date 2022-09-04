@@ -1,4 +1,4 @@
-.menuWrap{
+.menuWrap {
     position: fixed;
     bottom: 50px;
     left: 30px;
@@ -14,7 +14,7 @@
     transition: all 0.3s ease;
 }
 
-.menuWrap .menuIcon{
+.menuWrap .menuIcon {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
     position: relative;
 }
 
-.menuIcon .line{
+.menuIcon .line {
     width: 20px;
     height: 2.3px;
     border-radius: 20px;
@@ -31,21 +31,21 @@
     background-color: rgb(102, 21, 21);
 }
 
-.menuIcon .cross{
+.menuIcon .cross {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.menuIcon .cross .line{
+.menuIcon .cross .line {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
 }
 
-.menuWrap .listWrap{
+.menuWrap .listWrap {
     position: absolute;
     bottom: 40px;
     left: -30px;
@@ -54,14 +54,14 @@
     transform: translateX(-100%);
 }
 
-.menuWrap .listWrap ul{
+.menuWrap .listWrap ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.menuWrap .listWrap li{
+.menuWrap .listWrap li {
     white-space: nowrap;
     background-color: rgb(255, 224, 187);
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
@@ -84,18 +84,20 @@
 
 /* Menu Open */
 
-.menuIcon.active > .line:nth-child(1),.menuIcon.active > .line:nth-child(3){
+.menuIcon.active>.line:nth-child(1),
+.menuIcon.active>.line:nth-child(3) {
     opacity: 0;
 }
 
-.menuIcon.active .cross .line:nth-child(1){
-    transform: translate(-50%,-50%) rotate(45deg);
-}
-.menuIcon.active .cross .line:nth-child(2){
-    transform: translate(-50%,-50%) rotate(-45deg);
+.menuIcon.active .cross .line:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.menuIcon.active ~ .listWrap{
+.menuIcon.active .cross .line:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menuIcon.active~.listWrap {
     display: flex;
     flex-direction: column;
     transform: translateX(0%);
@@ -106,17 +108,17 @@
 
 /* Dark Mode */
 
-.menuWrap.dark{
+.menuWrap.dark {
     background-color: rgb(102, 21, 21);
     box-shadow: 0 1px 15px rgba(245, 222, 179, 0.5);
 
 }
 
-.menuWrap.dark .line{
+.menuWrap.dark .line {
     background-color: rgb(255, 224, 187);
 }
 
-.menuWrap.dark .listWrap li{
+.menuWrap.dark .listWrap li {
     background-color: rgb(102, 21, 21);
     box-shadow: 0 1px 15px rgba(245, 222, 179, 0.5);
 }

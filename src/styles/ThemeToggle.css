@@ -1,4 +1,4 @@
-.toggleBase{
+.toggleBase {
     height: 27px;
     width: 50px;
     border-radius: 20px;
@@ -10,7 +10,7 @@
     transition: all 0.3s ease;
 }
 
-.toggleSwitch{
+.toggleSwitch {
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -22,16 +22,16 @@
     transition: all 0.3s ease;
 }
 
-.toggleSwitch.icons{
+.toggleSwitch.icons {
     position: absolute;
 }
 
-.toggleSwitch #sun{
+.toggleSwitch #sun {
     color: rgb(49, 13, 13);
     transition: all 0.3s ease;
 }
 
-.toggleSwitch #moon{
+.toggleSwitch #moon {
     display: none;
     transition: all 0.3s ease;
 }
@@ -40,20 +40,20 @@
 
 /* Dark Mode */
 
-.toggleBase.dark{
+.toggleBase.dark {
     background-color: rgb(255, 224, 187);
 }
 
-.toggleSwitch.dark{
+.toggleSwitch.dark {
     background-color: rgb(49, 13, 13);
     transform: translateX(125%);
 }
 
-.toggleSwitch.dark #sun{
+.toggleSwitch.dark #sun {
     display: none;
 }
 
-.toggleSwitch.dark #moon{
+.toggleSwitch.dark #moon {
     display: initial;
     color: rgb(255, 224, 187);
 }
