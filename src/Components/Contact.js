@@ -6,7 +6,16 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import { useSelector } from 'react-redux'
 
 
-const notyf = new Notyf();
+const notyf = new Notyf({
+  types: [
+    {
+      type: 'info',
+      background: 'yellow',
+      icon: false
+    }
+  ]
+});
+
 
 export default function Contact() {
 
@@ -17,7 +26,12 @@ export default function Contact() {
   })
 
 
-  const submitQuery = () => {
+  const submitQuery = (e) => {
+    e.preventDefault();
+    notyf.success({
+      message: 'Submitting...',
+      icon: false
+    });
     fetch("https://aryanchoureybackend.herokuapp.com/submit-query", {
       method: "POST",
       headers: {
@@ -61,14 +75,14 @@ export default function Contact() {
         </div>
         <form className='form-boxes'>
           <label className='form-labels' htmlFor="text">Name: </label>
-          <input className='text-box' type={"text"} placeholder={"Enter your name"} value={formData.name} onChange={(e) => { setFormData({ ...formData, name: e.target.value }) }} />
+          <input className='text-box' type={"text"} placeholder={"Enter your name"} value={formData.name} onChange={(e) => { setFormData({ ...formData, name: e.target.value }) }} required />
           <label className='form-labels' htmlFor="email">E-mail: </label>
-          <input className='text-box' type={"email"} placeholder={"Enter your E-mail ID"} value={formData.email} onChange={(e) => { setFormData({ ...formData, email: e.target.value }) }} />
+          <input className='text-box' type={"email"} placeholder={"Enter your E-mail ID"} value={formData.email} onChange={(e) => { setFormData({ ...formData, email: e.target.value }) }} required />
           <label className='form-labels' htmlFor="message">Message: </label>
-          <textarea className='text-box' name="message" rows={7} placeholder={"Enter your message here"} value={formData.message} onChange={(e) => { setFormData({ ...formData, message: e.target.value }) }} />
-          <div className='submitButton' onClick={submitQuery}>
+          <textarea className='text-box' name="message" rows={7} placeholder={"Enter your message here"} value={formData.message} onChange={(e) => { setFormData({ ...formData, message: e.target.value }) }} required/>
+          <button className='submitButton' onClick={submitQuery} type={"submit"}>
             Submit
-          </div>
+          </button>
         </form>
       </div>
     </>
