@@ -18,7 +18,7 @@ export default function Contact() {
 
 
   const submitQuery = () => {
-    fetch("http://localhost:8080/submit-query", {
+    fetch("http://143.110.255.117:5410/submit-query", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',

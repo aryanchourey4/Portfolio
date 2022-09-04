@@ -21,7 +21,7 @@ export default function Home() {
 								style={{ height: '50px', width: '50px' }}
 							></Player>
 						</div>
-						<h1 id='HomeHeading'>Hi, I'm Aryan Chourey</h1>
+						<h1 id='HomeHeading'>Hi, <mark>I'm Aryan Chourey</mark></h1>
 					</div>
 					<hr />
 					<div className='box' id='box1'>
