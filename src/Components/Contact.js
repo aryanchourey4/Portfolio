@@ -18,7 +18,7 @@ export default function Contact() {
 
 
   const submitQuery = () => {
-    fetch("http://143.110.255.117:5410/submit-query", {
+    fetch("https://aryanchoureybackend.herokuapp.com/submit-query", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -37,7 +37,9 @@ export default function Contact() {
           message: ""
         })
       }
-    })
+    }).catch((error)=>{
+      notyf.error("Failed");
+        });
   }
 
   const darkState = useSelector(state => state.darkmode.value);
