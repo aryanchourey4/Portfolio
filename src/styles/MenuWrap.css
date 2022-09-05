@@ -1,6 +1,6 @@
 .menuWrap {
     position: fixed;
-    bottom: 50px;
+    bottom: 25px;
     left: 30px;
     background-color: rgb(255, 224, 187);
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
@@ -57,7 +57,11 @@
 .menuWrap .listWrap ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    position: relative;
+    bottom: 0px;
+    flex-wrap: wrap;
+    height: 50vh;
+    flex-direction: column-reverse;
     gap: 15px;
 }
 
