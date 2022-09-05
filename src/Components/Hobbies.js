@@ -25,7 +25,7 @@ export default function Hobbies() {
       <div className='hobbies-icons'>
         <div className='hover-icon'>
           <FontAwesomeIcon className='icons' icon={solid('code')} />
-          <div className='hover-text'><h4>Coding</h4><p>I got in interesterd in coding recently and have been trying to get better. I want to explore various fields starting with web development.</p></div>
+          <div className='hover-text'><h4>Coding</h4><p>I have developed an interest in coding recently and have been trying to get better at it. I want to explore various fields starting with web development.</p></div>
         </div>
         <div className='hover-icon'>
           <FontAwesomeIcon className='icons' icon={solid('person-running')} />
@@ -33,7 +33,7 @@ export default function Hobbies() {
         </div>
         <div className='hover-icon'>
           <FontAwesomeIcon className='icons' icon={solid('person-biking')} />
-          <div className='hover-text'><h4>Cycling</h4><p>Cycling is not only good for physical but also our mental health. I am also able to explore new things in my locality while cycling.</p></div>
+          <div className='hover-text'><h4>Cycling</h4><p>Cycling is not only good for our physical, but also our mental health. I enjoy exploring new things in my locality while cycling.</p></div>
         </div>
         <div className='hover-icon'>
           <FontAwesomeIcon className='icons' icon={solid('tv')} />
