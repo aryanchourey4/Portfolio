@@ -50,6 +50,8 @@ export default function Contact() {
           email: "",
           message: ""
         })
+      } else {
+        notyf.error("Failed");
       }
     }).catch((error) => {
       notyf.error("Failed");
