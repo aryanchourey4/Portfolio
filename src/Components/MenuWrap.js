@@ -13,7 +13,7 @@ const MenuWrap = () => {
 
 
     return (
-        <OutsideAlerter callback={() => {setMenuState(prev => !prev)}}>
+        <OutsideAlerter callback={() => {setMenuState(prev => 0)}}>
 
             <div className={`menuWrap ${darkState ? "dark" : ""}`} onClick={() => {
                 setMenuState((menuState) => {
