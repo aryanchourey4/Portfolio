@@ -3,6 +3,7 @@ import { useState } from 'react';
 import '../styles/MenuWrap.css'
 import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux'
+import OutsideAlerter from '../Hooks/ClickOutside';
 
 
 
@@ -12,7 +13,8 @@ const MenuWrap = () => {
 
 
     return (
-        <>
+        <OutsideAlerter callback={() => {setMenuState(prev => !prev)}}>
+
             <div className={`menuWrap ${darkState ? "dark" : ""}`} onClick={() => {
                 setMenuState((menuState) => {
                     return !menuState;
@@ -36,7 +38,7 @@ const MenuWrap = () => {
                     </ul>
                 </div>
             </div>
-        </>
+        </OutsideAlerter>
     )
 }
 
