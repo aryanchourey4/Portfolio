@@ -28,11 +28,12 @@ export default function Contact() {
 
   const submitQuery = (e) => {
     e.preventDefault();
-    notyf.success({
+    let myNotif = notyf.success({
       message: 'Submitting...',
-      icon: false
+      icon: false,
+      duration: 20000
     });
-    fetch("https://aryanchoureybackend.herokuapp.com/submit-query", {
+    fetch("http://localhost:8080/submit-query", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -43,6 +44,7 @@ export default function Contact() {
         message: formData.message
       })
     }).then((res) => (res.json())).then((res) => {
+      notyf.dismiss(myNotif)
       if (res.error == null) {
         notyf.success("Submitted")
         setFormData({
@@ -51,7 +53,10 @@ export default function Contact() {
           message: ""
         })
       } else {
-        notyf.error("Failed");
+        if(res.error==="Invalid")
+            notyf.error("Invalid Email")
+          else
+            notyf.error("Failed");
       }
     }).catch((error) => {
       notyf.error("Failed");
