@@ -33,7 +33,7 @@ export default function Contact() {
       icon: false,
       duration: 20000
     });
-    fetch("https://aryanchoureybackend.herokuapp.com/submit-query", {
+    fetch("https://aryanchoureybackend.onrender.com/submit-query", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
